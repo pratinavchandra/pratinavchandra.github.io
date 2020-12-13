@@ -1,0 +1,63 @@
+Pratinav Chandra
+Cyber Security Engineer
+
++91 9897818743
+
+I'm a Security Engineer possessing industry experience with Computer Networking, Firewalls, Web proxies, Linux, Python and Splunk with a keen interest in Penetration testing. I'm passionate about securing systems, networks and applications, reverse engineering processes to find security loopholes and automating repetitive and cumbersome tasks to make them more efficient and less time consuming.
+
+PERSONAL INFORMATION
+  Address: , , 
+  Nationality: 
+  Driving License: 
+  Hobbies: 
+
+SKILLS
+  Network Security
+  Penetration Testing
+  Python
+  Splunk
+  Linux
+  Computer Networking
+  Automation
+
+WORK EXPERIENCE
+  * July 2019 – Present
+    Cyber Security Analyst at Dell , 
+      
+
+  Enforcing security policies in the organization and working with firewalls, web proxies and VPN technologies.
+  Monitoring the infrastructure and network traffic using various tools like Splunk and Solarwinds.
+  Developing tools for automation of security processes using Python, bash and powershell scripting.
+  Troubleshooting and handling security incidents related to network security and analyzing the root cause.
+
+
+  * January 2019 – May 2019
+    Software Development Intern at Tecelec, 
+      Developed a web application for the automation of earthing calculations using React JS, Node JS and MongoDB Atlas.
+
+  * June 2018 – July 2018
+    Software Development Intern at Tecelec, 
+      Developed a web application for the automation of cable sizing calculations using HTML, CSS, JavaScript and PHP.
+
+  * June 2017 – July 2017
+    Graphic Designer at Autotriz, 
+      Worked as graphic design lead on creating the complete brand and identity design for the India branch of Autotriz, a German automotive nano technology firm.
+
+
+EDUCATION
+  * 2015 – 2019
+    Manipal University,  Bachelor of Technology, Computer Science
+
+PROJECTS
+  * pxymon, , August 2020 – October 2020
+
+    A python script to troubleshoot and identify issues related to web proxies and web based traffic faster. It has the capability to perform various kinds of tests on multiple proxies and URL lists at once.
+  * tbshoot, , April 2020 – May 2020
+
+    A command line tool written in python which consists of several sub modules to help troubleshoot network and security issues directly from the terminal. Some of the features include - performing instant health checks for any infrastructure node in the environment, fetching firewall logs and backups etc.
+  * patchlog, , May 2020 – May 2020
+
+    A command line utility that accepts a list of windows servers as an input file and generates a detailed report of the patching history of each server along with it's last boot up time.
+  * Sales forecasting of a newly launching product using Machine Learning., , October 2020 – October 2020
+
+    Developed a web application to forecast the sales of a newly releasing product and analyzing it's performance in the market using HTML, CSS, JavaScript, Twitter sentimental analysis, Google Trends API and Python (Flask Framework).
