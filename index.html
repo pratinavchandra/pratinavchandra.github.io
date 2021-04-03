@@ -30,7 +30,17 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+  
+    <script>
+  
+        $.getJSON("https://ipinfo.io",
+                                          function(data) {
+            $("#loc").html(data.city+", "+data.region+".");
+        })
+    </script>
 </head>
 
 <body>
@@ -442,7 +452,13 @@
    <footer id="contacts">
 
       <div class="row">
-
+        <span style="color: #7e7b7b; text-align: center;"> Hi stranger, </span><br>
+         <span style="color: #7e7b7b;">Interesting! You are near <span id="loc"></span></span>
+         <br>
+         <span style="color: #7e7b7b;">I'm planning to visit soon :)</span><br>
+         <br>
+         <span style="color: #7e7b7b;">Feel free to contact me on my socials:</span>
+         <br>
          <div class="twelve columns">
 
             <ul class="social-links">
