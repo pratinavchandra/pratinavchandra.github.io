@@ -8,26 +8,45 @@ body { background: #0f0f0f; }
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 #cybersec{
-   position: relative;
+   text-align: center;
    float:left; 
    width:25%;
-   height:100%;
+   height:auto;
 }
 #code{
-   position: relative;
+   text-align: center;
    float:left; 
-   width:25%;
-   height:100%;
-   margin-left:13%;
+   width:50%;
+   height:auto;
+   padding-right: 8%;
+   padding-left: 10%;
 }
 #net{
-   position: relative;
+   text-align: center;
    float:right; 
    width:25%;
-   height:100%;
+   height:auto;
 }
 .services{
-   padding-left: 5%;
+   position: relative;
+   display: grid;
+}
+@media screen and (max-width: 600px) {
+   #cybersec{
+      float:left; 
+      width:100%;
+      height:auto;
+   }
+   #code{
+      float:left; 
+      width:100%;
+      height:auto;
+   }
+   #net{
+      float:right; 
+      width:100%;
+      height:auto;
+   }
 }
 header {
    position: relative;
