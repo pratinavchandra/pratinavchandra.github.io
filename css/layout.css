@@ -33,16 +33,19 @@ body { background: #0f0f0f; }
 }
 @media screen and (max-width: 600px) {
    #cybersec{
+      padding: 5%;
       float:left; 
       width:100%;
       height:auto;
    }
    #code{
+      padding: 5%;
       float:left; 
       width:100%;
       height:auto;
    }
    #net{
+      padding: 5%;
       float:right; 
       width:100%;
       height:auto;
