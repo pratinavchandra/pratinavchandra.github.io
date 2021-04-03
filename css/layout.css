@@ -7,7 +7,28 @@ body { background: #0f0f0f; }
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
-
+#cybersec{
+   position: relative;
+   float:left; 
+   width:25%;
+   height:100%;
+}
+#code{
+   position: relative;
+   float:left; 
+   width:25%;
+   height:100%;
+   margin-left:13%;
+}
+#net{
+   position: relative;
+   float:right; 
+   width:25%;
+   height:100%;
+}
+.services{
+   padding-left: 5%;
+}
 header {
    position: relative;
    height: 800px;
@@ -989,12 +1010,10 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 .services .icon {
-  font-size: 50px;
-  color: white;
-  margin-bottom: 10px;
+   font-size: 50px;
+   color: white;
+   margin-bottom: 10px;
+ 
+ }
 
-}
-.services{
-  padding-left: 10%;
-  padding-left: 10%;
-}
+ 
