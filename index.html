@@ -440,7 +440,17 @@
    <!-- footer
    ================================================== -->
    <footer id="contacts">
-
+         <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+  
+    <script>
+  
+        $.getJSON("https://ipinfo.io",
+                                          function(data) {
+            $("#loc").html(data.city+", "+data.region+".");
+        })
+    </script>
       <div class="row">
         <span style="color: #7e7b7b; text-align: center;"> Hi stranger, </span><br>
          <span style="color: #7e7b7b;">Interesting! You are near <span id="loc"></span></span>
