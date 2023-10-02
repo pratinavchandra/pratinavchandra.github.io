@@ -13,6 +13,10 @@
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 }
+#cursor {
+  font-size: 2.3rem;
+  color: white;
+}
 hr{
   background-color: white;
 }
