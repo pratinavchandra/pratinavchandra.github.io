@@ -69,10 +69,12 @@
      if(toggle.innerHTML == '☀️'){
      var toggle = document.getElementById('theme-toggle')
      toggle.innerHTML = '🌙'
+     document.getElementById("cursor").style.color = "black";
     }
     else{
       var toggle = document.getElementById('theme-toggle')
      toggle.innerHTML = '☀️'
+     document.getElementById("cursor").style.color = "white";
     }
     var hori = document.getElementsByTagName("hr");
     hori.classList.toggle("dark-mode");
