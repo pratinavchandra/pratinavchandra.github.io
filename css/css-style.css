@@ -305,6 +305,8 @@ h4 {
 
 .hero-intro p.mt-3 {
 	margin-top: 0.35rem !important;
+	font-size: 0.95rem;
+	line-height: 1.5rem;
 }
 
 .hero-social {
@@ -326,6 +328,56 @@ h4 {
 	}
 }
 
+.project-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-top: 1rem;
+}
+
+.project-entry {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.project-thumb-wrap {
+	flex: 0 0 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-content {
+	flex: 1;
+	min-width: 0;
+}
+
+.project-title {
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 0.25rem;
+}
+
+.project-link {
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: 1.2;
+}
+
+.project-desc {
+	font-size: 0.9rem;
+	font-weight: 200;
+	margin-bottom: 0;
+}
+
+.project-tag {
+	font-weight: 400;
+	font-size: 0.8rem;
+	background-color: rgba(255, 105, 24, 0.251);
+}
+
 .project-thumb {
 	width: 100%;
 	max-width: 120px;
@@ -333,6 +385,15 @@ h4 {
 }
 
 @media (min-width: 768px) {
+	.project-entry {
+		gap: 1.5rem;
+	}
+
+	.project-thumb-wrap {
+		flex: 0 0 16.666%;
+		max-width: 120px;
+	}
+
 	.project-thumb {
 		max-width: 100%;
 	}
