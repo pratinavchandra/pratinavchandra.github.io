@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" style="zoom: 1.10">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Lab | Pratinav Chandra</title>
+  <link rel="stylesheet" href="css/css-style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&family=Ubuntu:wght@500&family=VT323&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body class="mode"><header class="page-content">
+  <nav class="navbar navbar-expand-md navbar-light py-4">
+    <div class="container-fluid px-0">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-4 mt-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#side_quests">side-quests</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#projects">projects</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#fun">fun stuff</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/document/d/1q9o7VoQePxuvHUWPyd5_LwZb9XZAx3nQelKaWXIkibk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">resume<i class="fa fa-external-link" aria-hidden="true" style="padding-left: 5px;"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+    <div class="portfolio-content py-3">
+      <h1 class="page-title">Home Lab</h1>
+      <div class="homelab-layout">
+        <div class="homelab-diagram-col">
+          <img class="homelab-diagram" src="images/homelab.png" alt="Home lab architecture diagram" loading="lazy" decoding="async">
+        </div>
+        <div class="homelab-content">
+          <div class="homelab-section">
+            <h2 class="homelab-section-title">Hardware</h2>
+            <ul class="homelab-hardware-list">
+              <li>Raspberry Pi4 8GB</li>
+              <li>TP-Link TL-SG105 Switch</li>
+              <li>2x Raspberry Pi5 8GB</li>
+              <li>Beelink SER5 MAX Mini PC</li>
+              <li>DeskPi RackMate TT Rackmount</li>
+            </ul>
+            <div class="homelab-stats">
+              <p class="homelab-power"><strong>Cost</strong> ~$850</p>
+              <p class="homelab-power"><strong>Power</strong> ~40–55W</p>
+            </div>
+          </div>
+          <div class="homelab-section">
+            <h2 class="homelab-section-title">Networking</h2>
+            <h3 class="homelab-subsection-title">DIY router (Pi4 + Switch)</h3>
+            <ul class="homelab-hardware-list">
+              <li>Pi4 running OpenWRT - Firewall, DHCP, DNS</li>
+              <li>Pi4 running Tailscale as a subnet router for remote access</li>
+              <li>Switch connected to Pi4 for LAN</li>
+              <li>WAN connected to home ISP router, USB A to ethernet adapter to convert Pi4 USB port to ethernet</li>
+            </ul>
+            <div class="homelab-app-grid" aria-label="Networking apps">
+              <a class="homelab-app-link" href="https://github.com/openwrt/openwrt" target="_blank" rel="noopener noreferrer" aria-label="OpenWrt on GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/openwrt-light.png" alt="OpenWrt" loading="lazy" decoding="async">
+              </a>
+              <a class="homelab-app-link" href="https://github.com/tailscale/tailscale" target="_blank" rel="noopener noreferrer" aria-label="Tailscale on GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/tailscale-light.png" alt="Tailscale" loading="lazy" decoding="async">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homelab-diagram-row">
+        <div class="homelab-diagram-section homelab-diagram-section--mini">
+          <h2 class="homelab-section-title homelab-diagram-title">Mini PC</h2>
+          <ul class="homelab-hardware-list">
+            <li>Runs self-hosted services and apps deployed as docker compose stacks</li>
+            <li>doco-cd for GitOps, renovate for dependency updates</li>
+            <li>SSO via Authentik</li>
+          </ul>
+          <div class="homelab-app-grid" aria-label="Self-hosted apps">
+            <a class="homelab-app-link" href="https://github.com/caddyserver/caddy" target="_blank" rel="noopener noreferrer" aria-label="Caddy on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/caddy.webp" alt="Caddy" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/goauthentik/authentik" target="_blank" rel="noopener noreferrer" aria-label="Authentik on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/authentik.webp" alt="Authentik" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/glanceapp/glance" target="_blank" rel="noopener noreferrer" aria-label="Glance on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/glance.webp" alt="Glance" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/sissbruecker/linkding" target="_blank" rel="noopener noreferrer" aria-label="Linkding on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/linkding.webp" alt="Linkding" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/usememos/memos" target="_blank" rel="noopener noreferrer" aria-label="Memos on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/memos.webp" alt="Memos" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/louislam/uptime-kuma" target="_blank" rel="noopener noreferrer" aria-label="Uptime Kuma on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/uptime-kuma.webp" alt="Uptime Kuma" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/henrygd/beszel" target="_blank" rel="noopener noreferrer" aria-label="Beszel on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/beszel.webp" alt="Beszel" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/openbao/openbao" target="_blank" rel="noopener noreferrer" aria-label="OpenBao on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/openbao.webp" alt="OpenBao" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/go-vikunja/vikunja" target="_blank" rel="noopener noreferrer" aria-label="Vikunja on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/vikunja.webp" alt="Vikunja" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/kimdre/doco-cd" target="_blank" rel="noopener noreferrer" aria-label="Doco-CD on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/doco-cd-light.png" alt="Doco-CD" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/renovatebot/renovate" target="_blank" rel="noopener noreferrer" aria-label="Renovate on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/mend-renovate.png" alt="Renovate" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/distribution/distribution" target="_blank" rel="noopener noreferrer" aria-label="Distribution on GitHub">
+              <img src="images/distribution-logo.svg" alt="Distribution" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/n8n-io/n8n" target="_blank" rel="noopener noreferrer" aria-label="n8n on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/n8n.png" alt="n8n" loading="lazy" decoding="async">
+            </a>
+          </div>
+        </div>
+        <div class="homelab-diagram-section homelab-diagram-section--k3s">
+          <h2 class="homelab-section-title homelab-diagram-title">k3s Cluster</h2>
+          <ul class="homelab-hardware-list">
+            <li>Both Pi5s running k3s in a master worker setup</li>
+            <li>falco for runtime monitoring</li>
+            <li>argo-cd for GitOps</li>
+            <li>Custom microservices in Istio service mesh</li>
+          </ul>
+          <div class="homelab-app-grid" aria-label="k3s cluster apps">
+            <a class="homelab-app-link" href="https://github.com/k3s-io/k3s" target="_blank" rel="noopener noreferrer" aria-label="k3s on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/rancher-k3s.png" alt="k3s" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/argoproj/argo-cd" target="_blank" rel="noopener noreferrer" aria-label="Argo CD on GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/argo-cd.png" alt="Argo CD" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/falcosecurity/falco" target="_blank" rel="noopener noreferrer" aria-label="Falco on GitHub">
+              <img src="images/falco.webp" alt="Falco" loading="lazy" decoding="async">
+            </a>
+            <a class="homelab-app-link" href="https://github.com/istio/istio" target="_blank" rel="noopener noreferrer" aria-label="Istio on GitHub">
+              <img src="images/istio.webp" alt="Istio" loading="lazy" decoding="async">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <script defer src="js/dist-jquery.slim.min.js"></script>
+  <script defer src="js/js-bootstrap.bundle.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGEYQMQ4ZJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LGEYQMQ4ZJ');
+  </script>
+</body>
+</html>
